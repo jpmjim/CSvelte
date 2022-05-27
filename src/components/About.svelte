@@ -19,9 +19,6 @@
   p {
     color: var(--theme-color);
   }
-  span {
-    color: var(--darkmode-color);
-  }
 </style>
 
 <div class="About">
@@ -29,6 +26,11 @@
   {#if !styles.darkMode}
     <p>{someText}</p>
   {:else}
+    <style>
+      span {
+        color: var(--darkmode-color);
+      }
+    </style>
     <p>
       <span>Hello DarkMode</span>
     </p>
