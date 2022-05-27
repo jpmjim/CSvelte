@@ -1,4 +1,5 @@
 <script>
+	// Exportanto componentes
 	import About from "./components/About.svelte";
 	import Text from "./components/Text.svelte";
 	import Person from "./components/Person.svelte";
@@ -16,6 +17,7 @@
 	}
 
 
+
 </script>
 
 <style>
@@ -26,6 +28,13 @@
 
 	:global(:root) {
 		--theme-color: purple;
+		--darkmode-color: #bfc2bf;
+	}
+
+	/* dark global */
+	:global(body.dark-mode) {
+		background-color: #1d3040;
+		color: var(--darkmode-color);
 	}
 
 	main {
