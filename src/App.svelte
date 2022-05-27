@@ -32,7 +32,7 @@
 	}
 
 	/* dark global */
-	:global(body.dark-mode) {
+	:global(body.dark-mode, span) {
 		background-color: #1d3040;
 		color: var(--darkmode-color);
 	}

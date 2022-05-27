@@ -26,11 +26,6 @@
   {#if !styles.darkMode}
     <p>{someText}</p>
   {:else}
-    <style>
-      span {
-        color: var(--darkmode-color);
-      }
-    </style>
     <p>
       <span>Hello DarkMode</span>
     </p>
