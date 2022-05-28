@@ -74,5 +74,6 @@
 	<Skills />
 	<Input />
 	<Photos />
+	
 	<img src={svelteLogo} alt="Svelte">
 </main>
